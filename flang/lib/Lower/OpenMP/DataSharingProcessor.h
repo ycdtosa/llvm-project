@@ -50,7 +50,6 @@ private:
   llvm::SetVector<const Fortran::semantics::Symbol *> privatizedSymbols;
   llvm::SetVector<const Fortran::semantics::Symbol *> defaultSymbols;
   llvm::SetVector<const Fortran::semantics::Symbol *> symbolsInNestedRegions;
-  llvm::SetVector<const Fortran::semantics::Symbol *> symbolsInParentRegions;
   Fortran::lower::AbstractConverter &converter;
   fir::FirOpBuilder &firOpBuilder;
   omp::List<omp::Clause> clauses;
